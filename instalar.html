@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Instalar a Agenda Santos</title>
+<meta name="theme-color" content="#1F4E5F">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{--c1:#1F4E5F;--c2:#E8B04B;--bg:#FBF6EA;--ink:#1F2A30;--muted:#4A5A60;--line:#E4DAC4;--card:#fff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2{font-family:Georgia,"Times New Roman",serif;margin:0}
+.pg{max-width:560px;margin:0 auto;padding:32px 20px 48px;padding-bottom:calc(48px + env(safe-area-inset-bottom))}
+.topo{text-align:center}
+.emb{width:120px;height:120px;margin:0 auto 12px}
+.emb svg{width:100%;height:100%;display:block}
+h1{font-size:28px;color:var(--c1);margin-bottom:8px}
+.lead{color:var(--muted);margin:0 0 20px;text-align:center}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+.card h2{font-size:19px;color:var(--c1);margin-bottom:8px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;border:2px solid var(--c1);border-radius:12px;padding:0 18px;font:inherit;font-weight:700;background:var(--c1);color:#FBF6EA;cursor:pointer;text-decoration:none;margin-top:10px}
+.btn.sec{background:transparent;color:var(--c1)}
+ol{margin:8px 0 0;padding-left:22px}
+li{margin:8px 0}
+.dica{color:var(--muted);font-size:14px}
+.aviso{background:#FFF3CD;border:1px solid #E6D08A;border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.ok{background:var(--c2);border-color:var(--c2);color:#1F2A30}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 16px;margin-bottom:12px}
+details[open]{border-color:var(--c1)}
+summary{cursor:pointer;font-weight:700;color:var(--c1);padding:14px 0;min-height:48px;list-style-position:inside}
+details>div{padding:0 0 14px}
+.sel{font-size:13px;font-weight:700;background:var(--c2);color:#1F2A30;border-radius:999px;padding:2px 10px;margin-left:6px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="pg">
+<header class="topo">
+<div class="emb"><svg viewBox="0 0 240 240" role="img" aria-label="Emblema da Agenda Santos"><circle cx="120" cy="120" r="112" fill="#1F4E5F"/><circle cx="120" cy="120" r="104" fill="none" stroke="#E8B04B" stroke-width="2.5"/><path d="M120 148 L120 186" stroke="#F6EBD3" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M120 184 C112 192 100 195 88 192" stroke="#E8B04B" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M120 184 C128 192 140 195 152 192" stroke="#E8B04B" stroke-width="4" stroke-linecap="round" fill="none"/><path d="M120 186 L120 198" stroke="#E8B04B" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="120" cy="75" r="5.5" fill="#E8B04B"/><circle cx="127" cy="60" r="6" fill="#E8B04B"/><circle cx="141" cy="54" r="7" fill="#E8B04B"/><circle cx="155" cy="53" r="7" fill="#E8B04B"/><circle cx="168" cy="62" r="6" fill="#E8B04B"/><circle cx="174" cy="78" r="6.5" fill="#E8B04B"/><circle cx="170" cy="95" r="6" fill="#E8B04B"/><circle cx="155" cy="111" r="6" fill="#E8B04B"/><circle cx="141" cy="125" r="5.5" fill="#E8B04B"/><circle cx="127" cy="137" r="5" fill="#E8B04B"/><circle cx="120" cy="150" r="5" fill="#E8B04B"/><circle cx="113" cy="60" r="6" fill="#E8B04B"/><circle cx="99" cy="54" r="7" fill="#E8B04B"/><circle cx="85" cy="53" r="7" fill="#E8B04B"/><circle cx="72" cy="62" r="6" fill="#E8B04B"/><circle cx="66" cy="78" r="6.5" fill="#E8B04B"/><circle cx="70" cy="95" r="6" fill="#E8B04B"/><circle cx="85" cy="111" r="6" fill="#E8B04B"/><circle cx="99" cy="125" r="5.5" fill="#E8B04B"/><circle cx="113" cy="137" r="5" fill="#E8B04B"/><circle cx="136" cy="72" r="5" fill="#F6EBD3"/><circle cx="104" cy="72" r="5" fill="#F6EBD3"/><circle cx="151" cy="86" r="5" fill="#F6EBD3"/><circle cx="89" cy="86" r="5" fill="#F6EBD3"/><circle cx="146" cy="104" r="5" fill="#F6EBD3"/><circle cx="94" cy="104" r="5" fill="#F6EBD3"/><text x="120" y="126" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#F6EBD3">S</text></svg></div>
+<h1>Instalar a Agenda Santos</h1>
+<p class="lead">Fica com um ícone na tela do seu aparelho, abre como um aplicativo e você não precisa digitar o endereço de novo.</p>
+</header>
+
+<div id="jainstalado" class="card ok" hidden><b>A agenda já está instalada neste aparelho.</b> Era só abrir pelo ícone.</div>
+
+<div id="dentro" class="aviso" hidden><b>Atenção:</b> você abriu esta página dentro de outro aplicativo (como WhatsApp, Instagram ou Facebook). Para instalar, abra no navegador: toque nos <b>três pontinhos</b> ou no ícone de compartilhar e escolha <b>"Abrir no navegador"</b> (Chrome no Android, Safari no iPhone e iPad).</div>
+
+<section id="agora" class="card" hidden>
+<h2>Instalar agora</h2>
+<p>Seu navegador permite instalar com um toque.</p>
+<button id="btnagora" class="btn" type="button">Instalar a Agenda Santos</button>
+</section>
+
+<details id="so-ios">
+<summary>iPhone e iPad (Safari)</summary>
+<div>
+<ol>
+<li>Abra esta página no <b>Safari</b> (o navegador azul com uma bússola).</li>
+<li>Toque no botão <b>Compartilhar</b> (um quadrado com uma seta para cima), na parte de baixo ou de cima da tela.</li>
+<li>Role a lista e toque em <b>"Adicionar à Tela de Início"</b>.</li>
+<li>Toque em <b>"Adicionar"</b>. O ícone aparece na tela, junto dos seus outros aplicativos.</li>
+</ol>
+<p class="dica">Em outros navegadores do iPhone a opção pode não aparecer; use o Safari.</p>
+</div>
+</details>
+
+<details id="so-android">
+<summary>Celular ou tablet Android (Chrome)</summary>
+<div>
+<ol>
+<li>Abra esta página no <b>Chrome</b>.</li>
+<li>Toque nos <b>três pontinhos</b> no canto de cima da tela.</li>
+<li>Toque em <b>"Instalar app"</b> ou <b>"Adicionar à tela inicial"</b>.</li>
+<li>Confirme em <b>"Instalar"</b>. O ícone aparece na tela inicial.</li>
+</ol>
+</div>
+</details>
+
+<details id="so-desktop">
+<summary>Computador (Windows, Mac ou Linux)</summary>
+<div>
+<ol>
+<li>Abra esta página no <b>Chrome</b> ou no <b>Edge</b>.</li>
+<li>Na barra de endereço, do lado direito, clique no ícone de <b>instalar</b> (uma telinha com uma seta para baixo).</li>
+<li>Se não aparecer, abra o menu (três pontinhos) e escolha <b>"Instalar Agenda Santos"</b>. No Edge: <b>Aplicativos &gt; Instalar este site como um aplicativo</b>.</li>
+<li>Clique em <b>"Instalar"</b>. A agenda abre numa janela própria e ganha atalho no seu computador.</li>
+</ol>
+<p class="dica">No Mac, o Safari também instala: menu <b>Arquivo &gt; Adicionar ao Dock</b>. O Firefox não instala; use Chrome ou Edge.</p>
+</div>
+</details>
+
+<a class="btn sec" href="./">Abrir a agenda sem instalar</a>
+<p class="dica" style="text-align:center;margin-top:18px">Instalar é opcional e não custa nada. Para entrar na agenda você precisa do código que a família recebeu. Nunca pedimos senha, CPF, documentos ou dinheiro.</p>
+</main>
+<script>
+(() => {
+'use strict';
+const ua = navigator.userAgent || '';
+const ios = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+const android = /Android/.test(ua);
+const so = ios ? 'ios' : android ? 'android' : 'desktop';
+const nomes = { ios: 'iPhone e iPad', android: 'Android', desktop: 'Computador' };
+const alvo = document.getElementById('so-' + so);
+alvo.open = true;
+const sel = document.createElement('span'); sel.className = 'sel'; sel.textContent = 'seu aparelho';
+alvo.querySelector('summary').appendChild(sel);
+alvo.parentNode.insertBefore(alvo, document.querySelector('details'));
+const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+if (standalone) document.getElementById('jainstalado').hidden = false;
+if (/FBAN|FBAV|Instagram|Line\/|; wv\)|GSA\//.test(ua)) document.getElementById('dentro').hidden = false;
+let dp = null;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); dp = e; if (!standalone) document.getElementById('agora').hidden = false; });
+window.addEventListener('appinstalled', () => { document.getElementById('agora').hidden = true; document.getElementById('jainstalado').hidden = false; });
+document.getElementById('btnagora').addEventListener('click', async () => {
+  if (!dp) return;
+  try { dp.prompt(); await dp.userChoice; } catch (e) {}
+  dp = null; document.getElementById('agora').hidden = true;
+});
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
